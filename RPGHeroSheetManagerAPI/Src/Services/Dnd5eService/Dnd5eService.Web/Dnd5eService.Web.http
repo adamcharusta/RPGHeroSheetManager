@@ -1,0 +1,6 @@
+@Dnd5eService.Web_HostAddress = http://localhost:5270
+
+GET {{Dnd5eService.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

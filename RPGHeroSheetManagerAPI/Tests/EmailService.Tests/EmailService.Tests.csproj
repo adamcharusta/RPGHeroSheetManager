@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>RPGHeroSheetManagerAPI.EmailService.Tests</RootNamespace>
+    <AssemblyName>RPGHeroSheetManagerAPI.EmailService.Tests</AssemblyName>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector"/>
+    <PackageReference Include="Microsoft.NET.Test.Sdk"/>
+    <PackageReference Include="xunit"/>
+    <PackageReference Include="xunit.runner.visualstudio"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Src\Services\EmailService\EmailService.Application\EmailService.Application.csproj"/>
+    <ProjectReference Include="..\..\Src\Services\EmailService\EmailService.Domain\EmailService.Domain.csproj"/>
+    <ProjectReference Include="..\..\Src\Services\EmailService\EmailService.Infrastructure\EmailService.Infrastructure.csproj"/>
+    <ProjectReference Include="..\..\Src\Services\EmailService\EmailService.Worker\EmailService.Worker.csproj"/>
+    <ProjectReference Include="..\Tests.Shared\Tests.Shared.csproj"/>
+  </ItemGroup>
+
+</Project>

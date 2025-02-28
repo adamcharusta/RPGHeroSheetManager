@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>RPGHeroSheetManagerAPI.Dnd5eService.Application</RootNamespace>
+    <AssemblyName>RPGHeroSheetManagerAPI.Dnd5eService.Application</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dnd5eService.Infrastructure\Dnd5eService.Infrastructure.csproj"/>
+  </ItemGroup>
+
+</Project>

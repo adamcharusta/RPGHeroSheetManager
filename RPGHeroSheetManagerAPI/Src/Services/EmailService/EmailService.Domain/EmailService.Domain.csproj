@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>RPGHeroSheetManagerAPI.EmailService.Domain</RootNamespace>
+    <AssemblyName>RPGHeroSheetManagerAPI.EmailService.Domain</AssemblyName>
+  </PropertyGroup>
+
+</Project>

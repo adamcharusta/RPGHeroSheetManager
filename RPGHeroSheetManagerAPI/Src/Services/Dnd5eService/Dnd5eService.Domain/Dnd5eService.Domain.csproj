@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>RPGHeroSheetManagerAPI.Dnd5eService.Domain</RootNamespace>
+    <AssemblyName>RPGHeroSheetManagerAPI.Dnd5eService.Domain</AssemblyName>
+  </PropertyGroup>
+
+</Project>

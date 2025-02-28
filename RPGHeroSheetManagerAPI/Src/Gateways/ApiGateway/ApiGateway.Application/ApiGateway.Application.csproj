@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>RPGHeroSheetManagerAPI.ApiGateway.Application</RootNamespace>
+    <AssemblyName>RPGHeroSheetManagerAPI.ApiGateway.Application</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApiGateway.Infrastructure\ApiGateway.Infrastructure.csproj"/>
+  </ItemGroup>
+
+</Project>

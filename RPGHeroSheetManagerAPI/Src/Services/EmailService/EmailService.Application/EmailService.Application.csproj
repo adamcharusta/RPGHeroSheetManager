@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>RPGHeroSheetManagerAPI.EmailService.Application</RootNamespace>
+    <AssemblyName>RPGHeroSheetManagerAPI.EmailService.Application</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EmailService.Infrastructure\EmailService.Infrastructure.csproj"/>
+  </ItemGroup>
+
+</Project>

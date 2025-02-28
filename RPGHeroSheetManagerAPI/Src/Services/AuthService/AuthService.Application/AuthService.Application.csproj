@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>RPGHeroSheetManagerAPI.AuthService.Application</RootNamespace>
+    <AssemblyName>RPGHeroSheetManagerAPI.AuthService.Application</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AuthService.Infrastructure\AuthService.Infrastructure.csproj"/>
+  </ItemGroup>
+
+</Project>
