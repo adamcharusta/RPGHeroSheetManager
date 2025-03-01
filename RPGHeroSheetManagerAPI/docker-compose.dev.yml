@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-CU17-ubuntu-22.04
+    container_name: mssql
+    restart: always
+    ports:
+      - "${MSSQL_PORT}:1433"
+    environment:
+      SA_PASSWORD: "${MSSQL_SA_PASSWORD}"
+      ACCEPT_EULA: "${MSSQL_ACCEPT_EULA}"
+      MSSQL_PID: "${MSSQL_MSSQL_PID}"
+    volumes:
+      - mssql_data:/var/opt/mssql
+  
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    restart: always
+    ports:
+      - "${RABBITMQ_PORT}:5672"
+      - "${RABBITMQ_MANAGEMENT_PORT}:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: "${RABBITMQ_DEFAULT_USER}"
+      RABBITMQ_DEFAULT_PASS: "${RABBITMQ_DEFAULT_PASS}"
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+
+volumes:
+  mssql_data:
+  rabbitmq_data:

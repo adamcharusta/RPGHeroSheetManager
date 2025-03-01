@@ -8,7 +8,17 @@
     <PackageVersion Include="AutoMapper" Version="14.0.0"/>
     <PackageVersion Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0"/>
     <PackageVersion Include="MediatR" Version="12.4.1"/>
+    <PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.13"/>
+    <PackageVersion Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.13"/>
     <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="8.0.12"/>
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.13"/>
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.13"/>
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.13"/>
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.13"/>
+    <PackageVersion Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.2"/>
+    <PackageVersion Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="8.0.13"/>
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.3"/>
+    <PackageVersion Include="RabbitMQ.Client" Version="7.1.1"/>
     <PackageVersion Include="Serilog.Extensions.Hosting" Version="9.0.0"/>
     <PackageVersion Include="Serilog.Sinks.Console" Version="6.0.0"/>
     <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.6.2"/>

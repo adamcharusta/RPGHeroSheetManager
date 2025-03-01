@@ -19,6 +19,10 @@ public static class DependencyInjection
             app.UseSwagger();
             app.UseSwaggerUI();
         }
+        else
+        {
+            app.UseHsts();
+        }
 
         app.UseExceptionHandler(options => { });
         app.MapEndpoints();

@@ -5,4 +5,9 @@
     <AssemblyName>RPGHeroSheetManagerAPI.AuthService.Domain</AssemblyName>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore"/>
+  </ItemGroup>
+
+
 </Project>

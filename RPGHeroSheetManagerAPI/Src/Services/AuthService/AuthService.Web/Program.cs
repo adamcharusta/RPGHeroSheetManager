@@ -1,11 +1,33 @@
-using RPGHeroSheetManagerAPI.Infrastructure.Web;
+using RPGHeroSheetManagerAPI.AuthService.Infrastructure;
+using RPGHeroSheetManagerAPI.AuthService.Infrastructure.Auth;
+using RPGHeroSheetManagerAPI.Infrastructure.Logger;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Host.AddSerilogLogging("AuthService");
 
-builder.Services.AddWebInfrastructure();
+try
+{
+    builder.Services
+        .AddInfrastructureServices(builder.Configuration)
+        .AddApplicationServices()
+        .AddWebServices();
 
-var app = builder.Build();
+    var app = builder.Build();
 
-app.UseWebInfrastructure();
+    await app.UseInfrastructureServicesAsync();
+    app.UseWebServices();
 
-app.Run();
+    app.Run();
+}
+catch (Exception ex)
+{
+    Log.Fatal(ex, "Host terminated unexpectedly");
+}
+finally
+{
+    builder.Host.DisposeSerilogLogging();
+}
+
+
+public partial class Program;
